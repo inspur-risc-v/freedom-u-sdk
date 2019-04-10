@@ -11,11 +11,11 @@ bootargs=debug console=tty0 console=ttySIF0 root=/dev/mmcblk0p2 rootwait
 #bootargs=debug console=tty0 console=ttySIF0 root=/dev/nvme0n1p2
 
 # to boot an initramfs (buildroot or debian/etc) use this
-setupchosen=run setupvml; run setupird
+#setupchosen=run setupvml; run setupird
 
 # to boot with straight to the root= parition, uncomment below
 # so we do not set the ramdisk pointers
-#setupchosen=run setupvml
+setupchosen=run setupvml
 
 # The FIT file to boot from
 fitfile=hifiveu.fit
